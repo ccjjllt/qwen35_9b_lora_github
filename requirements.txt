@@ -1,0 +1,14 @@
+pandas>=2.2
+numpy>=1.26
+pyyaml>=6.0
+scikit-learn>=1.4
+tqdm>=4.66
+datasets>=2.20
+huggingface-hub>=0.30.0
+transformers>=4.57.0
+accelerate>=1.1.0
+peft>=0.14.0
+bitsandbytes>=0.45.0
+sentencepiece>=0.2.0
+safetensors>=0.4.5
+protobuf>=4.25

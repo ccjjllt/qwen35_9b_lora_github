@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Data / model artifacts
+data/*.csv
+models/
+outputs/
+reports/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db

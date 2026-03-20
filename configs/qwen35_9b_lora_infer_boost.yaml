@@ -1,0 +1,48 @@
+seed: 42
+
+prompt:
+  style: en_v1
+
+data:
+  n_splits: 5
+  kfold_seed: 42
+  max_length: 896
+  max_train_samples: -1
+  max_val_samples: -1
+
+model:
+  model_name: /root/data/models/Qwen3.5-9B
+
+hub:
+  local_files_only: true
+  token: ""
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+
+train:
+  batch_size: 1
+  eval_batch_size: 1
+  grad_accum: 16
+  num_epochs: 2
+  learning_rate: 1.5e-4
+  weight_decay: 0.0
+  warmup_ratio: 0.03
+  logging_steps: 10
+  save_total_limit: 2
+  fp16: false
+  bf16: true
+  optim: paged_adamw_8bit
+
+inference:
+  max_prompt_length: 896
+  max_new_tokens: 320
+  batch_size: 2
+  do_sample: false
+  num_beams: 3
+  num_return_sequences: 3
+  min_votes: 2
+  repetition_penalty: 1.05
+  progress_log_interval: 20

@@ -1,0 +1,4 @@
+run_id,run_date,config,model_name,fold,precision,recall,f1,pred_count,gold_count,hit_count,status,notes
+quick_smoke_fold0,2026-03-18,configs/qwen35_9b_lora_quick.yaml,Qwen/Qwen3.5-9B,0,0.5350389321468298,0.3660578386605784,0.43470402169001354,899,1314,481,success,Smoke test on subset (max_train_samples=400 max_val_samples=120)
+base_full_fold0,2026-03-19,configs/qwen35_9b_lora.yaml,Qwen/Qwen3.5-9B,0,0.7719033232628398,0.7777777777777778,0.7748294162244124,1324,1314,1022,success,2 epochs full fold0
+aggressive_full_fold0,2026-03-20,configs/qwen35_9b_lora_aggressive.yaml,Qwen/Qwen3.5-9B,0,0.7854463615903976,0.7968036529680366,0.7910842463165848,1333,1314,1047,success,3 epochs + higher LoRA rank (r=64)

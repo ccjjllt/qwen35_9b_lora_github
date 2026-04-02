@@ -1,7 +1,7 @@
 # Tianchi 评论观点挖掘 - Qwen3.5-9B LoRA 项目整理版
 
 本项目是对“【天池经典打榜赛】赛道六-评论观点挖掘赛”的 LoRA 路线整理，目标是可复现、可持续迭代
-
+> 比赛入口:https://tianchi.aliyun.com/competition/entrance/532421
 ## 1. 我们在做什么
 
 - 任务：从评论中抽取四元组  
